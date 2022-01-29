@@ -7,13 +7,37 @@
     @apply bg-[url('https://preview.colorlib.com/theme/glint/images/hero-bg.jpg.webp')];
   }
 
+  .bg-contact {
+    @apply bg-[url('https://preview.colorlib.com/theme/glint/images/xcontact-bg.jpg.pagespeed.ic.Yg-_T7iMmI.webp')];
+  }
+
+  .cinput {
+    @apply w-full flex-1 border-b border-cgray-light border-opacity-20 bg-transparent
+    pb-4 text-cgray-light
+    outline-none ring-0
+    transition-all
+    duration-700 placeholder:text-cgray-light
+    placeholder:opacity-50 focus:border-green-500 focus:text-white;
+  }
+
+  .sec-header-title {
+    @apply font-bold uppercase tracking-widest
+    text-green-500;
+  }
+
+  .sec-header-descr {
+    @apply max-w-4xl text-center font-montserrat text-[3rem] font-bold text-white;
+  }
+
   .banner-icon {
-    @apply rounded-full p-2 transition-all duration-150 md:border-2 md:border-white;
+    @apply rounded-full p-2 transition-all duration-150 md:border-2
+     md:border-white;
   }
 
   .banner-btn {
-    @apply h-16 w-72 border-2 border-white    
-      font-mono font-bold uppercase tracking-wider
-      text-white transition-all duration-500 hover:bg-white hover:text-black sm:w-80;
+    @apply h-16 w-72 border-2 border-white font-mono font-bold    
+      uppercase tracking-wider text-white transition-all
+      duration-500 hover:bg-white hover:text-black-dark sm:w-80 
+      lg:h-14 lg:w-52;
   }
 }
