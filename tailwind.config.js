@@ -35,6 +35,7 @@ module.exports = {
         slideRight: 'slideRight 800ms linear',
         slideDown: 'slideDown 300ms linear',
         zoomIn: 'zoomIn 300ms ease-in',
+        moveLT: 'moveLT 3000ms ease-in',
       },
       keyframes: {
         slideUp: {
@@ -123,6 +124,14 @@ module.exports = {
           '100%': {
             fontSize: '0.75rem',
             opacity: '100%',
+          },
+        },
+        moveLT: {
+          '0%': {
+            transform: 'translate(-50px,-50px)',
+          },
+          '100%': {
+            transform: 'translate(0px,0px)',
           },
         },
       },

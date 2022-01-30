@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
@@ -8,14 +8,27 @@ import Header from '../components/Header'
 import RecentWorks from '../components/RecentWorks'
 import Services from '../components/Services'
 import { selectIsOpened, setIsOpened } from '../slices/DrawerSlice';
-import { FaClosedCaptioning, FaXing, FaXingSquare } from 'react-icons/fa'
-import { AiOutlineClose } from 'react-icons/ai'
+import { FaArrowUp, FaClosedCaptioning, FaXing, FaXingSquare } from 'react-icons/fa'
+import { AiOutlineClose, AiOutlineUp } from 'react-icons/ai'
 import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
+import Drawer from '../components/Drawer'
 
 export default function Home() {
-  const isOpened = useSelector(selectIsOpened);
-  const dispatch = useDispatch();
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener('scroll', (e) => {
+      if (window.scrollY >= 450) {
+        setIsScrolled(true);
+      }
+      else {
+        setIsScrolled(false);
+      }
+    })
+  }, []);
+
 
   return (
     <div className="bg-hero overflow-x-hidden relative bg-black-faded h-full bg-cover bg-center bg-fixed">
@@ -32,7 +45,7 @@ export default function Home() {
           <Services />
           <RecentWorks />
           <Gallery />
-          <div className='relative w-full'>
+          <div id='contact' className='relative w-full'>
             <ContactUs />
             <div className='w-[0.5] h-48 mt-[-90px] ml-[50%] mx-auto items-center flex justify-center absolute top-0 border border-green-400'></div>
           </div>
@@ -40,36 +53,21 @@ export default function Home() {
         </main>
       </div>
 
-      <div className={`fixed z-50 
-        ${isOpened ? 'translate-x-0' : 'translate-x-full'}
-        duration-700 top-0 w-[300px] right-0 bg-black-dark h-[100%] `}>
-        {/* Drawer Content */}
-        <div className='p-10 space-y-14 top-0 right-2 fixed'>
-          <div className='flex w-full top-0 right-0 
-           justify-between items-center'>
-            <p className={`font-montserrat font-bold delay-300
-             ${isOpened && 'animate-slideRight'}
-             text-sm text-green-600 uppercase`}>Navigation</p>
-            <div
-              onClick={() => {
-                dispatch(setIsOpened(false));
-              }}
-              className='p-2 cursor-pointer text-white'>
-              <AiOutlineClose className='' />
-            </div>
-          </div>
-          <div className={`delay-300 ${isOpened && 'animate-slideRight'}
-           flex flex-col space-y-3 items-start justify-between`}>
-            <p className='text-white text-xl font-bold'>Home</p>
-            <p className='text-white text-xl font-bold'>About</p>
-            <p className='text-white text-xl font-bold'>Services</p>
-            <p className='text-white text-xl font-bold'>Works</p>
-            <p className='text-white text-xl font-bold'>Clients</p>
-            <p className='text-white text-xl font-bold'>Contacts</p>
-          </div>
-          <p className={`text-gray-600 ${isOpened && 'animate-slideRight'} `}>Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
-        </div>
+
+      <div
+        onClick={() => {
+          if (!isScrolled) return;
+          scrollTo({
+            behavior: "smooth",
+            top: 0
+          })
+        }}
+        className={`bg-black-dark  ${isScrolled ? 'inline-block bg-black-dark text-white cursor-pointer' : "bg-transparent"}
+        transition-all ease-in duration-[800ms] text-transparent  p-5 z-[60] fixed bottom-8 right-4`}>
+        <AiOutlineUp className={`w-6 transition-all ease-in duration-[800ms] ${isScrolled ? 'text-white' : 'text-transparent'} `} />
       </div>
+
+      <Drawer />
 
     </div>
   )

@@ -41,7 +41,7 @@ const Services = () => {
         });
     }, []);
 
-    return <div className='bg-white space-y-12 lg:space-y-5 py-36'>
+    return <div id='services' className='bg-white space-y-12 lg:space-y-5 py-36'>
         <div id='serviceHeader' className={`flex flex-col items-center ${isServicesHeaderInViewPort && 'animate-slideUp duration-1000'}`}>
             <h2 className='sec-header-title'>what we do</h2>
             <h3 className='sec-header-descr text-black-dark'>We’ve got everything you need to launch and grow your business</h3>

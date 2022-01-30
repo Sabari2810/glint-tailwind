@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const RecentWorks = () => {
-    return <div className='py-28 bg-black-dark text-white'>
-        <div className='max-w-6xl mx-auto flex flex-col space-y-3 items-center'>
+    const [isWorksHeaderInViewport, setIsWorksHeaderInViewport] = useState(false);
+    useEffect(() => {
+        document.addEventListener('scroll', function () {
+            let worksHeader: HTMLElement = document.getElementById('worksHeader')!;
+            var worksHeaderBounding = worksHeader.getBoundingClientRect();
+
+            if (worksHeaderBounding.top >= - worksHeader.offsetHeight
+                && worksHeaderBounding.left >= - worksHeader.offsetWidth
+                && worksHeaderBounding.right <= (window.innerWidth || document.documentElement.clientWidth) + worksHeader.offsetWidth
+                && worksHeaderBounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + worksHeader.offsetHeight) {
+                setIsWorksHeaderInViewport(true);
+            }
+        });
+    }, []);
+
+    return <div id='works' className='py-28 bg-black-dark text-white'>
+        <div id='worksHeader' className={`max-w-6xl ${isWorksHeaderInViewport && 'animate-slideUp duration-1000'} mx-auto flex flex-col space-y-3 items-center`}>
             <p className='sec-header-title'>
                 RECENT WORKS
             </p>

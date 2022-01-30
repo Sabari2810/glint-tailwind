@@ -26,7 +26,7 @@
   }
 
   .sec-header-descr {
-    @apply max-w-4xl text-center font-montserrat text-[3rem] font-bold text-white;
+    @apply px-10 text-center font-montserrat text-[2rem] font-bold text-white md:max-w-4xl md:px-0 md:text-[3rem];
   }
 
   .banner-icon {
@@ -37,7 +37,7 @@
   .banner-btn {
     @apply h-16 w-72 border-2 border-white font-mono font-bold    
       uppercase tracking-wider text-white transition-all
-      duration-500 hover:bg-white hover:text-black-dark sm:w-80 
+      duration-500 hover:bg-white hover:text-black-dark sm:w-72 md:w-52 
       lg:h-14 lg:w-52;
   }
 }
