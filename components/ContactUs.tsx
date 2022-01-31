@@ -30,12 +30,12 @@ const ContactUs = () => {
 
 
     return <div id='contact' className='bg-contact bg-black-faded bg-opacity-100'>
-        <div className='max-w-5xl py-32 mx-auto'>
+        <div className='sm:max-w-5xl py-32 mx-auto'>
             <div id='contactHeader' className={`flex flex-col items-center ${isContactHeaderInViewport && "animate-slideUp duration-1000"}'}`}>
                 <h2 className='sec-header-title'>Contact us</h2>
                 <h3 className='sec-header-descr'>Reach out for a new project or just say hello</h3>
             </div>
-            <div id='contactForm' className={`flex justify-evenly lg:flex-row px-12 ${isContactFormInViewport && "animate-slideUp duration-1000"} lg:px-0 flex-col pt-10 h-[1300px] lg:h-[800px]`}>
+            <div id='contactForm' className={`flex justify-evenly lg:flex-row sm:px-12 ${isContactFormInViewport && "animate-slideUp duration-1000"} lg:px-0 flex-col pt-10 h-[1300px] lg:h-[800px]`}>
                 <div className='px-14 flex-1 h-full flex flex-col items-start justify-evenly bg-black-dark bg-opacity-40'>
                     <h3 className='uppercase text-white font-montserrat text-sm tracking-wider font-semibold'>send us a message</h3>
                     <div className='w-full flex flex-col space-y-4 items-start'>
@@ -49,23 +49,23 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className='flex pb-20 lg:pb-0 pl-12 h-[50%] 
-                 w-full lg:w-[21rem] lg:h-full pr-[5rem] flex-col items-start bg-black-dark bg-opacity-40 lg:bg-opacity-100 lg:bg-black-faded justify-evenly'>
+                 w-full lg:w-[21rem] lg:h-full pr-[5rem] flex-col sm:items-start bg-black-dark bg-opacity-40 lg:bg-opacity-100 lg:bg-black-faded justify-evenly'>
                     <h3 className='lg:flex hidden uppercase text-white font-montserrat text-sm tracking-wider font-semibold'>contact info</h3>
-                    <div className='flex space-y-5 flex-col items-start'>
+                    <div className='flex space-y-5 flex-col items-center sm:items-start'>
                         <h3 className='text-green-600 font-montserrat text-lg font-semibold'>
                             Where to Find Us
                         </h3>
-                        <p className='text-cgray-light sm:max-w-[12rem] leading-relaxed'>
+                        <p className='text-cgray-light sm:max-w-[12rem] text-center sm:text-left leading-relaxed'>
                             1600 Amphitheatre Parkway
                             Mountain View, CA
                             94043 US
                         </p>
                     </div>
-                    <div className='flex space-y-5 flex-col items-start'>
+                    <div className='flex space-y-5 flex-col items-center sm:items-start'>
                         <h3 className='text-green-600 font-montserrat text-lg font-semibold'>
                             Email Us At
                         </h3>
-                        <div className='text-cgray-light'>
+                        <div className='text-cgray-light text-center sm:text-left'>
                             <p className='pb-2'>
                                 contact@glintsite.com
                             </p>
@@ -74,11 +74,11 @@ const ContactUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex space-y-5 flex-col items-start'>
+                    <div className='flex space-y-5 flex-col items-center sm:items-start'>
                         <h3 className='text-green-600 font-montserrat text-lg font-semibold'>
                             Call Us At
                         </h3>
-                        <div className='text-cgray-light'>
+                        <div className='text-cgray-light text-center sm:text-left'>
                             <p className=' pb-2'>
                                 Phone: (+63) 555 1212
                             </p>
@@ -90,7 +90,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center space-x-4 text-white'>
+                    <div className='flex items-center justify-center sm:justify-start space-x-4 text-white'>
                         <FaFacebookF className='h-5 hover:scale-95 transition-all cursor-pointer hover:text-green-600 duration-500' />
                         <FaTwitter className='h-5 hover:scale-95 transition-all cursor-pointer hover:text-green-600 duration-500' />
                         <FaInstagram className='h-5 hover:scale-95 transition-all cursor-pointer hover:text-green-600 duration-500' />

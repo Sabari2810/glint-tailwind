@@ -43,7 +43,7 @@ const Gallery = () => {
             <div className='grid grid-cols-1 px-11 md:grid-cols-2'>
                 <div className={`relative duration-700 
                 overflow-hidden cursor-pointer group`}>
-                    <img className='group-hover:scale-110 h-full h-[600px] w-full object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-shutterbug.jpg.webp" alt="" />
+                    <img className='group-hover:scale-110 h-[300px] sm:h-[600px] w-full object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-shutterbug.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
                     transition-all flex-col justify-between p-8
                      absolute text-white top-0 right-0 w-full
@@ -73,7 +73,7 @@ const Gallery = () => {
                 </div>
                 <div className='relative transition duration-300 
                 overflow-hidden cursor-pointer group'>
-                    <img className={`group-hover:scale-110 h-[600px] object-cover h-full
+                    <img className={`group-hover:scale-110 h-[300px] sm:h-[600px] object-cover
                      transition duration-700 `}
                         src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-woodcraft.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
@@ -103,7 +103,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className='relative transition duration-300 overflow-hidden cursor-pointer group'>
-                    <img className='group-hover:scale-110 h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-beetle.jpg.webp" alt="" />
+                    <img className='group-hover:scale-110 h-[300px] sm:h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-beetle.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
                     transition-all flex-col justify-between p-8
                      absolute text-white top-0 right-0 w-full
@@ -131,7 +131,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className='relative transition duration-300 overflow-hidden cursor-pointer group'>
-                    <img className='group-hover:scale-110 h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-grow-green.jpg.webp" alt="" />
+                    <img className='group-hover:scale-110 h-[300px] sm:h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-grow-green.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
                     transition-all flex-col justify-between p-8
                      absolute text-white top-0 right-0 w-full
@@ -159,7 +159,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className='relative transition duration-300 overflow-hidden cursor-pointer group'>
-                    <img className='group-hover:scale-110 h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-guitarist.jpg.webp" alt="" />
+                    <img className='group-hover:scale-110 h-[300px] sm:h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-guitarist.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
                     transition-all flex-col justify-between p-8
                      absolute text-white top-0 right-0 w-full
@@ -187,7 +187,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className='relative transition duration-300 overflow-hidden cursor-pointer group'>
-                    <img className='group-hover:scale-110 h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-palmeira.jpg.webp" alt="" />
+                    <img className='group-hover:scale-110 h-[300px] sm:h-[600px] object-cover transition duration-700 ' src="https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-palmeira.jpg.webp" alt="" />
                     <div className='hidden bg-black-dark bg-opacity-75 duration-700
                     transition-all flex-col justify-between p-8
                      absolute text-white top-0 right-0 w-full
