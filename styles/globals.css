@@ -26,7 +26,7 @@
   }
 
   .sec-header-descr {
-    @apply px-10 text-center font-montserrat text-[2rem] font-bold text-white md:max-w-4xl md:px-0 md:text-[3rem];
+    @apply px-10 text-center font-montserrat text-2xl sm:text-[2rem] font-bold text-white md:max-w-4xl md:px-0 md:text-[3rem];
   }
 
   .banner-icon {

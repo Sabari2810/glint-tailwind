@@ -99,24 +99,27 @@ const GreenBanner = () => {
                     <hr className='my-7 border-y-1 border-green-400 w-full' />
                 </div>
             </div>
-            <p id='gbDescr' className={`max-w-4xl px-20 lg:px-0 font-serif text-black-dark opacity-95 font-thin text-center ${isGbDescrInViewport && 'animate-slideUp duration-1000'}
-         leading-relaxed text-2xl`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-            <div id='gbStats' className={`py-16 grid grid-cols-2 space-x-4 lg:space-x-0 lg:grid-cols-4 items-center ${isGbStatsInViewport && 'animate-slideUp duration-1000'}`}>
-                <div className='flex flex-col items-center px-14 mb-8 lg:mb-0 border-r space-y-4 border-green-400 pb-2'>
+            <p id='gbDescr' className={`max-w-4xl px-8 sm:px-20 lg:px-0 font-serif text-black-dark opacity-95 font-thin text-center ${isGbDescrInViewport && 'animate-slideUp duration-1000'}
+         leading-relaxed text-lg sm:text-2xl`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+            <div id='gbStats' className={`py-16 grid gap-6 sm:grid-cols-2 sm:space-x-4 lg:space-x-0 lg:grid-cols-4 items-center ${isGbStatsInViewport && 'animate-slideUp duration-1000'}`}>
+                <div className='flex flex-col items-center px-14 sm:mb-8 lg:mb-0 sm:border-r space-y-4 border-green-400 pb-2'>
                     <p className='text-7xl text-white font-bold duration-100 transition-all'>{
                         awards
                     }</p>
                     <p className='text-xl font-bold capitalize'>Awards Received</p>
                 </div>
-                <div className='flex flex-col items-center px-14 mb-8 lg:mb-0 lg:border-r space-y-4 border-green-400 pb-2'>
+                <hr className='sm:hidden w-full max-w-[16rem] mx-auto border-green-500' />
+                <div className='flex flex-col items-center px-14 sm:mb-8 lg:mb-0 lg:border-r space-y-4 border-green-400 pb-2'>
                     <p className='text-7xl font-sans text-white font-bold'>{cups}</p>
                     <p className='text-xl font-bold capitalize'>cups of coffee</p>
                 </div>
-                <div className='flex flex-col items-center px-14 border-r space-y-4 border-green-400 pb-2'>
+                <hr className='sm:hidden w-full max-w-[16rem] mx-auto border-green-500' />
+                <div className='flex flex-col items-center px-14 sm:border-r space-y-4 sm:border-green-400 pb-2'>
                     <p className='text-7xl text-white font-bold'>{projects}</p>
                     <p className='text-xl font-bold capitalize'>projects completed</p>
                 </div>
-                <div className='flex flex-col items-center px-14 border-white space-y-4 pb-2'>
+                <hr className='sm:hidden w-full max-w-[16rem] mx-auto border-green-500' />
+                <div className='flex flex-col items-center px-14 sm:border-white space-y-4 pb-2'>
                     <p className='text-7xl text-white font-bold'>{clients}</p>
                     <p className='text-xl font-bold capitalize'>happy clients</p>
                 </div>
