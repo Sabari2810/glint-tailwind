@@ -17,7 +17,7 @@ const Header = () => {
                 dispatch(setIsOpened(true));
             }
             }
-            className='cursor-pointer z-50 bg-black-dark p-2 group flex items-center space-x-2
+            className='cursor-pointer z-50 bg-black-dark p-2 group flex items-center sm:space-x-2
          fixed top-6 right-10'>
             <p className='uppercase group-hover:text-white text-xs
              transition-all duration-500 tracking-[0.2rem] 
