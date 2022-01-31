@@ -21,7 +21,7 @@ const Header = () => {
          fixed top-6 right-10'>
             <p className='uppercase group-hover:text-white text-xs
              transition-all duration-500 tracking-[0.2rem] 
-             text-green-600 font-montserrat font-bold'>menu</p>
+             text-green-600 hidden sm:inline-block font-montserrat font-bold'>menu</p>
             <MenuIcon className='h-8 w-8 text-white' />
         </div>
     </div>;
