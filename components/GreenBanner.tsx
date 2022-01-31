@@ -125,7 +125,7 @@ const GreenBanner = () => {
                 </div>
             </div>
         </div>
-        <div className='absolute h-28 right-20 top-0 border border-white'>
+        <div className='absolute h-20 sm:h-28 right-20 top-0 border border-white'>
         </div>
     </div>;
 };

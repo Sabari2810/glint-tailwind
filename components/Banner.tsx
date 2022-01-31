@@ -2,22 +2,24 @@ import React from 'react';
 import { FaArrowDown, FaBehance, FaChevronDown, FaDribbble, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Banner = () => {
-    return <div id='home' className='py-12 relative bg-transparent flex font-montserrat items-center justify-between'>
+    return <div id='home' className='py-12 relative bg-transparent flex font-montserrat items-center 
+    justify-between'>
         <div className='sm:max-w-lg animate-slideUp md:max-w-xl lg:max-w-6xl flex
-         flex-col items-start bg-transparent pt-28
-        pl-7 sm:pl-9 md:pl-24 lg:px-48'>
+         flex-col items-center sm:items-start bg-transparent pt-28
+        sm:pl-7 sm:pl-9 md:pl-24 lg:px-48'>
             <p className='text-gray-500 
             uppercase tracking-widest bg-transparent px-2 py-2 font-semibold'>Welcome to Glint</p>
             <h3 className='text-white py-3 mobile:leading-normal sm:leading-snug
              lg:leading-normal
-            text-4xl lg:text-6xl font-bold'>
+            text-4xl lg:text-6xl font-bold text-center sm:text-left'>
                 We are a creative group
                 of people who design
                 influential brands and
                 digital experiences.
 
             </h3>
-            <div className='flex lg:mt-14 mt-8 bg-transparent pb-24 flex-col md:flex md:flex-row items-center
+            <div className='flex w-full lg:mt-14 mt-8 bg-transparent pb-24 
+            flex-col md:flex md:flex-row items-center
              md:space-y-0 md:space-x-8 space-y-6'>
                 <button className='banner-btn'>Start a project</button>
                 <button className='banner-btn'>More about us</button>
@@ -55,7 +57,7 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-        <div className='absolute h-28 right-20 bottom-0 border border-green-500'>
+        <div className='absolute h-20 sm:h-28 right-20 bottom-0 border border-green-500'>
             <div className='relative'>
                 <div className='absolute w-[180px] right-0 top-0 text-white'>
                     <div
