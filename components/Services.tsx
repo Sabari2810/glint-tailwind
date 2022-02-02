@@ -41,14 +41,14 @@ const Services = () => {
         });
     }, []);
 
-    return <div id='services' className='bg-white space-y-12 lg:space-y-5 py-36'>
+    return <div id='services' className='bg-white space-y-12 lg:space-y-15 py-36'>
         <div id='serviceHeader' className={`flex flex-col items-center ${isServicesHeaderInViewPort && 'animate-slideUp duration-1000'}`}>
             <h2 className='sec-header-title'>what we do</h2>
             <h3 className='sec-header-descr text-black-dark'>We’ve got everything you need to launch and grow your business</h3>
             <hr className='border-slate-300 max-w-[12rem] sm:max-w-xl w-full my-4' />
         </div>
         <div id='service1' className={`grid gap-10 lg:grid-cols-2 grid-cols-1 ${isServiceOneInViewPort && 'animate-slideUp duration-1000'}
-         items-center space-y-7 lg:space-x-16 max-w-2xl lg:max-w-7xl mx-auto`}>
+         items-center space-y-7 md:space-y-0 lg:space-x-16 max-w-2xl lg:max-w-7xl mx-auto`}>
             <div className='flex flex-col lg:space-y-0 space-y-8 lg:flex-row items-center lg:items-start
              justify-start sm:space-x-5'>
                 <AiFillFormatPainter className='w-52 h-20 text-green-500' />
@@ -67,7 +67,7 @@ const Services = () => {
             </div>
         </div>
         <div id='service2' className={`grid gap-10 lg:grid-cols-2 grid-cols-1 ${isServiceTwoInViewPort && 'animate-slideUp duration-1000'}
-         items-center space-y-7 lg:space-x-16 max-w-2xl lg:max-w-7xl mx-auto`}>
+         items-center space-y-7 md:space-y-0 lg:space-x-16 max-w-2xl lg:max-w-7xl mx-auto`}>
             <div className='flex flex-col lg:space-y-0 space-y-8 lg:flex-row items-center lg:items-start 
             justify-start sm:space-x-5'>
                 <AiFillRocket className='w-52 h-20 text-green-500' />
